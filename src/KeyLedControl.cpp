@@ -15,14 +15,14 @@ static bool keyLedsDirty = false;
 // Map to absolute start pixel indices so gaps can be ignored by
 // editing the start values directly (EXECUTOR_LED_COUNT must be total including gap pixels).
 static const uint16_t EXEC_LED_START[NUM_EXECUTORS_TRACKED] = {
-  // 101-110 (bottom row, reversed)
-  78, 76, 74, 72, 70, 68, 66, 64, 62, 60,
+  // 101-110 (bottom row)
+  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
   // 201-210
-  40, 42, 44, 46, 48, 50, 52, 54, 56, 58,
-  // 301-310 (reversed)
-  38, 36, 34, 32, 32, 32, 32, 32, 32, 32,
+  10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+  // 301-310
+  20, 21, 22, 23, 24, 25, 26, 27, 28, 29,  
   // 401-410 (top row)
-  0, 3, 6, 9, 13, 18, 21, 24, 27, 30
+  30, 31, 32, 33, 34, 35, 36, 37, 38, 39
 };
 
 static uint32_t buildExecColor(int execIndex, uint8_t brightness) {
